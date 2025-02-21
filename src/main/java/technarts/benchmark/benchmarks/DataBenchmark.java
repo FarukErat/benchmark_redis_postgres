@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Warmup(iterations = 5, time = 1)
-@Measurement(iterations = 100, time = 1)
+@Measurement(iterations = 10, time = 1)
 @Fork(1)
 public class DataBenchmark {
 
