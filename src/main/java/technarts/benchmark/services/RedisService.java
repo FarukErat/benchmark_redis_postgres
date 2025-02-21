@@ -1,4 +1,4 @@
-package technarts.benchmark.service;
+package technarts.benchmark.services;
 
 import redis.clients.jedis.Jedis;
 

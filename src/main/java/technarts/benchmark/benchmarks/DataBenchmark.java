@@ -1,8 +1,8 @@
 package technarts.benchmark.benchmarks;
 
 import org.openjdk.jmh.annotations.*;
-import technarts.benchmark.service.PostgresService;
-import technarts.benchmark.service.RedisService;
+import technarts.benchmark.services.PostgresService;
+import technarts.benchmark.services.RedisService;
 
 import java.util.concurrent.TimeUnit;
 

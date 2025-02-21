@@ -1,4 +1,4 @@
-package technarts.benchmark.service;
+package technarts.benchmark.services;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
