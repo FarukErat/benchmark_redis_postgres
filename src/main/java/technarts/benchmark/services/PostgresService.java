@@ -14,11 +14,19 @@ public class PostgresService {
     private static final String PASSWORD = "mypassword";
 
     private static final String URL = "jdbc:postgresql://" + HOST + ":" + PORT + "/" + DATABASE;
+    private static final Statement statement;
+
+    static {
+        try {
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            statement = connection.createStatement();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static void executeRawSql(String sql) {
-        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-             Statement statement = connection.createStatement()) {
-
+        try {
             boolean hasResultSet = statement.execute(sql);
 
             if (hasResultSet) {
