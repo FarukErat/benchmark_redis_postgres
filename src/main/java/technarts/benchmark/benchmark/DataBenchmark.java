@@ -1,4 +1,4 @@
-package technarts.benchmark;
+package technarts.benchmark.benchmark;
 
 import org.openjdk.jmh.annotations.*;
 import technarts.benchmark.service.PostgresService;

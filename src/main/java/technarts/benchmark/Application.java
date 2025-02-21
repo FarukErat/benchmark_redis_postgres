@@ -4,6 +4,7 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
+import technarts.benchmark.benchmark.DataBenchmark;
 
 public class Application {
 
