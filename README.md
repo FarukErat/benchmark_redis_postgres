@@ -19,8 +19,8 @@ The following results were obtained from the benchmarks:
 
 | Benchmark                       | Mode | Count | Score (ms/op) | Error (ms/op) |
 |---------------------------------|------|-------|---------------|---------------|
-| `benchmarkPostgres`             | avgt | 100   | 13.279        | ± 0.171       |
-| `benchmarkRedis`                | avgt | 100   | 0.620         | ± 0.014       |
+| `benchmarkPostgres`             | avgt | 10    | 0.716         | ± 0.099       |
+| `benchmarkRedis`                | avgt | 10    | 0.674         | ± 0.170       |
 
 **Interpretation:**
 
@@ -29,7 +29,7 @@ The following results were obtained from the benchmarks:
 - **Score**: Average time taken per operation.
 - **Error**: Statistical error margin of the score.
 
-The results demonstrate that data retrieval from Redis (`benchmarkRedis`) is significantly faster than from PostgreSQL (`benchmarkPostgres`) under the tested conditions.
+The results demonstrate that data retrieval from Redis (`benchmarkRedis`) is slightly faster than from PostgreSQL (`benchmarkPostgres`) under the tested conditions.
 
 ## How to Run the Benchmarks
 
