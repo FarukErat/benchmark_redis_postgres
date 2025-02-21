@@ -6,11 +6,7 @@ public class RedisService {
     private static final String HOST = "localhost";
     private static final int PORT = 6379;
 
-    private static final Jedis jedis;
-
-    static {
-        jedis = new Jedis(HOST, PORT);
-    }
+    private static final Jedis jedis = new Jedis(HOST, PORT);
 
     public static String get(String key) {
         return jedis.get(key);

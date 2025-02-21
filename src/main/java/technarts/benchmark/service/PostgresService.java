@@ -15,15 +15,6 @@ public class PostgresService {
 
     private static final String URL = "jdbc:postgresql://" + HOST + ":" + PORT + "/" + DATABASE;
 
-    static {
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e) {
-            System.err.println("PostgreSQL JDBC Driver not found. Include it in your library path.");
-            e.printStackTrace();
-        }
-    }
-
     public static void executeRawSql(String sql) {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              Statement statement = connection.createStatement()) {
