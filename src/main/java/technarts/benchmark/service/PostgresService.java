@@ -24,17 +24,17 @@ public class PostgresService {
             if (hasResultSet) {
                 try (ResultSet rs = statement.getResultSet()) {
                     while (rs.next()) {
-                        System.out.println(rs.getString(1));
+//                        System.out.println(rs.getString(1));
                     }
                 }
             } else {
                 int updateCount = statement.getUpdateCount();
-                System.out.println("Rows affected: " + updateCount);
+//                System.out.println("Rows affected: " + updateCount);
             }
 
         } catch (SQLException e) {
-            System.err.println("Error executing SQL: " + e.getMessage());
-            e.printStackTrace();
+//            System.err.println("Error executing SQL: " + e.getMessage());
+//            e.printStackTrace();
         }
     }
 }
